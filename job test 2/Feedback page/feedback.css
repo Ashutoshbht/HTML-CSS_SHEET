@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* include padding and border in the element's total width and height */
+}
+
+body {
+    width: 100%;
+    height: auto;
+    font-family: Arial, sans-serif; /* adding a fallback font */
+}
+
+nav {
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px; /* adding padding for better spacing */
+}
+
+nav img {
+    height: 72px;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+}
+
+.nav_container div {
+    margin-right: 65px; 
+    font-family: Helvetica Neue;
+    color: #333232;
+    font: normal normal bold 20px/25px Helvetica Neue;
+    font-size: 16px;
+
+}
+
+.nav_container div:last-child {
+    margin-right: 0; 
+}
+
+.nav_container div:nth-child(4) {
+    background-color: #0076FF; 
+    color: white; 
+    margin-right: 35px;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.nav_container div:nth-child(4):hover {
+    background-color: #0056b3; 
+}
+
+.mid_section{
+    position: relative;
+    display: inline-block;
+}
+.mid_section img{
+    display: block;
+    max-width: 100%;
+    height: auto;   
+}
+.mid_section h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333232;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-family: Helvetica Neue;
+}
+
+.mid_section_data{
+    margin: 0;
+    min-height: 400px;
+    width: 100%;
+}
+.heading1 h1{
+    text-align: center;
+    position: relative;
+    width: 71%;
+    border-bottom: 1.5px solid grey;
+    padding-bottom: 61px;
+    left: 14%;
+    color: #333232;
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    margin-top: 31px;
+    font-weight: bold;
+}
+.content{
+    width: 100%;
+    height: auto;
+}
+.para_main p{
+    width: 71%;
+    height: auto;
+    color: #333232;
+    position: relative;
+    left: 14%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.para_child p{
+    width: 71%;
+    height: auto;
+    color: #0076FF;
+    position: relative;
+    text-align: right;
+    float: right;
+    right: 16%;
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 61px;
+}
+.para_main2{
+    width: 100%;
+    height: auto;
+    margin-top: 120px;
+}
+.para_main2 p{
+    width: 71%;
+    height: auto;
+    color: #333232;
+    position: relative;
+    left: 14%;
+    margin-top: 30px;
+    text-align: center;
+}
+.para_child2 p{
+    width: 71%;
+    height: auto;
+    color: #0076FF;
+    position: relative;
+    text-align: right;
+    float: right;
+    right: 16%;
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+    border-bottom: 1.5px solid gray;
+    padding-bottom: 61px;
+}
+.para_main3{
+    width: 100%;
+    height: auto;
+    margin-top: 132px;
+}
+.para_main3 p{
+    width: 71%;
+    height: auto;
+    color: #333232;
+    position: relative;
+    left: 14%;
+    margin-top: 30px;
+    text-align: center;
+}
+.para_child3 p{
+    width: 71%;
+    height: auto;
+    color: #0076FF;
+    position: relative;
+    text-align: right;
+    float: right;
+    right: 16%;
+    margin-top: 16px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+
+}
+footer{
+    width: 100%;
+    min-height: 200px;
+    background-color: #0076FF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+footer img{
+    height: 157px;
+    margin-top: 29px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    nav img {
+        padding: 5px; 
+    }
+    .nav_container div {
+        margin: 5px; 
+    }
+    .nav_container div:nth-child(4) {
+        margin-right: 10px; 
+        .mid_section h1 {
+            font-size: 50px; 
+        }
+    .mid_section_data h2 {
+        font-size: 20px;     
+    }
+}
+.mid_section_data h2 {
+    width: 100%; /* Set width to full for smaller screens */
+    margin-left: 0; /* Remove left margin to center the h2 element */
+    padding: 0 20px; 
+}
+
+}
